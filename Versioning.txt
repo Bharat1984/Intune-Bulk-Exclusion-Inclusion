@@ -1,0 +1,100 @@
+1.0
+
+✅ Fully working
+
+✅ Using flexible app detection
+
+✅ Compatible with both Win32 and other app types (e.g., Store, Line-of-business)
+
+
+2.0
+Manual entry for:
+
+Included AAD groups
+
+Excluded AAD groups
+
+App names
+
+💡 Cross-check and remove existing assignments before adding new ones
+
+🔄 Smart app lookup (supports Win32, LOB, Store apps)
+
+📣 Real-time logging
+
+📋 Optional summary popup
+
+⚡ Fast launch (no preloading)
+
+
+
+4.0
+Full App Audit Export
+Application ID
+STOP Button
+
+5.0-All Global Exclusion
+
+✅ Assign (include/exclude selected groups on selected apps)
+✅ Export CSV Audit (AppId, GroupId, live progress, partial CSV if stopped)
+✅ Stop Audit (interrupts audit or exclusions instantly)
+✅ Add Exclusion To All Apps (adds the exclusion from the textbox to every app, also stoppable)
+
+6.0
+
+🚀 Assign
+
+📦 Export CSV Audit (with live progress + stop)
+
+⛔ Stop Audit (stops both audit & global exclusion)
+
+➕ Add Exclusion To All Apps (with instant stop support)
+
+Windows Win32 apps
+
+Windows Store apps
+
+macOS apps
+
+iOS apps
+
+Android apps
+
+(any app type listed in Intune under Apps → All Apps).
+
+
+# 🚀 Intune Bulk Assignment Tool
+**Version:** 9.0 Production  
+**File:** `Intune-Bulk-Assignment-9.0-Production.ps1`
+
+## 📋 Overview
+This PowerShell tool provides an interactive GUI to **bulk manage Microsoft Intune app assignments** using Microsoft Graph.  
+It helps Intune admins:
+- Quickly **assign groups to apps** as required.
+- **Exclude groups** from selected apps.
+- **Remove exclusions** across multiple apps.
+- Filter by app names and get a live audit log.
+
+---
+
+## ✨ Features
+✅ Connects securely to Microsoft Graph API with:
+- `DeviceManagementApps.ReadWrite.All`
+- `Group.Read.All`
+
+✅ Windows Forms GUI with:
+- Fields for Azure AD group name
+- Text filter to narrow down apps
+- Buttons to add group to apps, add as exclusion, or remove exclusion
+- Real-time log display
+- **Stop button** to interrupt long operations
+
+✅ Summary pop-ups and detailed logs.
+
+---
+
+## 🔧 Requirements
+- Windows with PowerShell 5.1+
+- Microsoft Graph PowerShell SDK installed:
+  ```powershell
+  Install-Module Microsoft.Graph -Scope CurrentUser
