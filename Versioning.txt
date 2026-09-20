@@ -67,6 +67,8 @@ Android apps
 **Version:** 9.0 Production  
 **File:** `Intune-Bulk-Assignment-9.0-Production.ps1`
 
+Built by https://techtrendinsights.co.in/ | Owner: Bharat Arora
+
 ## 📋 Overview
 This PowerShell tool provides an interactive GUI to **bulk manage Microsoft Intune app assignments** using Microsoft Graph.  
 It helps Intune admins:
